@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "version": "0.1",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "minimum_chrome_version": "6.0.0.0",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "all_frames": true,
+    "js": ["content_actions.js"],
+    "run_at": "document_end"
+  }],
+  "commands": {
+    "remove-command": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U"
+      },
+      "description": "Removes IMG tags if any got created lately"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "https://image.baidu.com/*",
+    "https://www.bing.com/images/*",
+    "https://www.google.com/*",
+    "https://tineye.com/*",
+    "https://yandex.com/images/*",
+    "https://yandex.ru/images/*",
+    "https://yandex.by/images/*",
+    "https://yandex.ua/images/*",
+    "https://yandex.kz/images/*",
+    "https://yandex.com.tr/images/*",
+    "*://*/*"
+  ],
+  "icons": {
+    "32": "icons/icon-32.png",
+    "96": "icons/icon-32.png"
+  }
+}

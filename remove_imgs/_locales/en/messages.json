@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Tests on content mangling",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Current tests: Removal of IMG tags.",
+    "description": "Description of the extension."
+  }
+}
