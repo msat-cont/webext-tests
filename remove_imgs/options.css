@@ -1,0 +1,33 @@
+
+.overall_outer {
+    margin-left: 5px;
+}
+
+.common_label {
+    margin-bottom: 5px;
+}
+
+.url_img_auto_use_input {
+    width: 250px;
+    margin-right: 5px;
+}
+
+.url_img_auto_use_del {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.url_img_auto_use_add_outer {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.url_img_auto_use_add {
+    color: #101040;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
