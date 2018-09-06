@@ -63,7 +63,7 @@ var check_url_for_image_removal = function (request, sender, sendResponse, item,
         if ((urls[idx].value) && (urls[idx].form) && (urls[idx].form == "regexp")) {
             let page_url_covered = false;
             try {
-                let value_regexp = new RegExp(urls[idx].value.replace(/\\/g, "\\\\"), "i");
+                let value_regexp = new RegExp(urls[idx].value, "i");
                 if (value_regexp.test(page_url)) {
                     page_url_covered = true;
                 }
